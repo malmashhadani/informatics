@@ -1,0 +1,27 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <%= link_to image_tag("informatics_logo2.png", :class=>"logo"), root_path %>
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <form role="search">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+  <div class="links">
+    <nav role="navigation">
+        <ul id="js-navigation-menu" class="navigation-menu show">
+          <li class="nav-link"><%= active_link_to 'Research', researches_path %></li>
+          <li class="nav-link"><%= active_link_to 'Projects', projects_path %></li>
+          <li class="nav-link"><%= active_link_to 'Publications', publications_path %></li>
+          <li class="nav-link"><%= active_link_to 'People', aboutus_path %></li>
+          <li class="nav-link"><%= active_link_to 'Contact Us', contactus_path %></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</header>

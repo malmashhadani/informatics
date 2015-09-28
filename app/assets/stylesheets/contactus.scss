@@ -1,0 +1,61 @@
+// Place all the styles related to the contactus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bourbon";
+@import "neat";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+p{
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+}
+#ttl{
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+#contact{
+	@include outer-container;
+	#contact-inforamtion {
+		@include span-columns(5);
+    background-image: url(texture.jpg);
+	}
+	#contact-map{
+		@include span-columns(7);
+  }
+}
+
+#map_canvas {
+  height: 400px;
+  width: 100%;
+  /*border-radius: 15px 50px;*/
+  border-radius: 50%;
+}
+
+#map_canvas img { 
+  max-width: none; // to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.glyphicon {
+  color: #9C002C;
+}
