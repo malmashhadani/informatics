@@ -1,0 +1,27 @@
+<br><br>
+<div class="details">
+  <div id="newpub">
+    <h1>New Publication</h1>
+    <%= bootstrap_form_for(@publication, layout: :horizontal) do |f| %>
+      <% if @publication.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@publication.errors.count, "error") %> prohibited this publication from being saved:</h2>
+
+          <ul>
+          <% @publication.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <%= f.text_field :title, control_col: "col-sm-6" %>
+      <%= f.text_field :authors, control_col: "col-sm-6" %>
+      <%= f.text_field :conference, control_col: "col-sm-6" %>
+      <%= f.number_field :year, control_col: "col-sm-1"  %>
+      <%= f.text_field :link, control_col: "col-sm-6" %>
+      <%= f.text_area :abstract, control_col: "col-sm-6"  %>
+      <%= f.primary %>
+    <% end %>
+  </div>
+</div>

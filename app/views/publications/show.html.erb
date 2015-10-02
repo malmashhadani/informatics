@@ -1,0 +1,12 @@
+<div id="pub">
+	<br><br><br>
+	<div class="details">
+		<h1><%= @publication.title %></h1>
+		<p><strong>Authors:</strong> <%= @publication.authors %></p>
+		<p><strong>Conference:</strong> <%= @publication.conference %> , <%= @publication.year %> </p>
+		<p><strong>Link:</strong> <%= @publication.link %></p>
+		<p><h3>Abstract:<br></h3> <%= @publication.abstract %></p>
+	</div>
+	<br><br>
+	<h3><%= link_to 'Publications', publications_path %></h3>
+</div>

@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928011800) do
+ActiveRecord::Schema.define(version: 20151002200120) do
+
+  create_table "members", force: :cascade do |t|
+    t.string   "name"
+    t.string   "field"
+    t.string   "degree"
+    t.string   "title"
+    t.text     "bio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "publications", force: :cascade do |t|
     t.string   "title"
@@ -21,6 +38,15 @@ ActiveRecord::Schema.define(version: 20150928011800) do
     t.string   "conference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "link"
+  end
+
+  create_table "researches", force: :cascade do |t|
+    t.string   "topic"
+    t.text     "description"
+    t.string   "field"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

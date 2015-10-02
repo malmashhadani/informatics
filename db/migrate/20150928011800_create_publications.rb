@@ -6,7 +6,6 @@ class CreatePublications < ActiveRecord::Migration
       t.text :abstract
       t.integer :year
       t.string :conference
-
       t.timestamps null: false
     end
   end
