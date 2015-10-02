@@ -33,3 +33,9 @@
 	}
 }
 
+.publication {
+	@include outer-container;
+	#accordion {
+		@include span-columns(12);
+	}
+}

@@ -1,10 +1,9 @@
-class CreateMembers < ActiveRecord::Migration
+class CreateAboutus < ActiveRecord::Migration
   def change
-    create_table :members do |t|
+    create_table :aboutus do |t|
       t.string :name
       t.string :field
       t.string :degree
-      t.string :title
       t.text :bio
 
       t.timestamps null: false

@@ -4,12 +4,10 @@ one:
   name: MyString
   field: MyString
   degree: MyString
-  title: MyString
   bio: MyText
 
 two:
   name: MyString
   field: MyString
   degree: MyString
-  title: MyString
   bio: MyText
