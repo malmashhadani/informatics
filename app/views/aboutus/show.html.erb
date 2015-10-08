@@ -1,0 +1,12 @@
+<div id="memb">
+	<br><br><br>
+	<div class="details">
+		<%= image_tag @member.photo.url(:small) %>
+		<p><strong>Name:</strong><%= @member.name %></p>
+		<p><strong>Field of Study: </strong> <%= @member.field %></p>
+		<p><strong>Degree:</strong> <%= @member.degree %></p>
+		<p><h3>Bio:<br></h3> <%= @member.bio %></p>
+	</div>
+	<br><br>
+	<h3><%= link_to 'People', aboutus_path %></h3>
+</div>
